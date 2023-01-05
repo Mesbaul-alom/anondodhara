@@ -25,6 +25,7 @@ Route::get('/', [HomeController::class, 'index'])
     Route::get('notice/all', [HomeController::class, 'noticeall']);
     Route::get('page/{slug}', [HomeController::class, 'pageshow']);
     Route::get('info/all', [HomeController::class, 'infoall']);
+    Route::get('/donate/now', [HomeController::class, 'donatenow']);
 Route::get('terms', [TermsController::class, 'index'])
     ->name('pages.terms')
     ->breadcrumbs(function (Trail $trail) {

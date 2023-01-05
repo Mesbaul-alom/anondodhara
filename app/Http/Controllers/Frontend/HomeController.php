@@ -37,6 +37,11 @@ class HomeController
         $notices=Notice::orderBy('id', 'DESC')->get();
         return view('frontend.content.noticeall',compact('notices'));
     }
+    public function donatenow()
+    {
+       
+        return view('frontend.content.donatenow');
+    }
     public function infoall()
     {
         $infos=Info::orderBy('id', 'DESC')->get();
